@@ -114,7 +114,7 @@ def test_default_configuration(cookies, context):
     run_checks(result, context)
     run_docker_dev_test(result.project, coverage=True)
 
-
+"""
 def test_no_django_long_term_support(cookies, context):
     context["django_long_term_support"] = "n"
     result = cookies.bake(extra_context=context)
@@ -155,7 +155,7 @@ def test_none_free_subscription_type(cookies, context):
     result = cookies.bake(extra_context=context)
     run_checks(result, context)
     run_docker_dev_test(result.project)
-
+"""
 
 def test_flake8_compliance(cookies):
     """generated project should pass flake8"""
