@@ -27,7 +27,7 @@ before_install:
   - docker -v
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t 7f93d5b7-a3cf-4740-ab88-86fb9eb04154
+  - bash <(curl -s https://codecov.io/bash)
 
 script:
     - tox -e $TOX_ENV
