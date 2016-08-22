@@ -1,0 +1,20 @@
+{
+  "presets": [["es2015", {"modules": false}], "stage-0", "react"],
+  "env": {
+    "local": {
+      "plugins": [["react-transform", {
+        "transforms": [{
+          "transform": "react-transform-hmr",
+          "imports": ["react"],
+          "locals": ["module"]
+        }]
+      }]]
+    },
+    "production": {},
+    "test": {
+      "plugins": [
+        ["__coverage__", {"ignore": "**/__tests__/**"}]
+      ]
+    }
+  }
+}

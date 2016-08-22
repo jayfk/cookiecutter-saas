@@ -1,0 +1,51 @@
+{% raw %}{% extends "base.html" %}
+{% load humanize %}
+
+{% block title %}Blog{% endblock title %}
+
+{% block content %}
+  {% for entry in entries %}
+    <section class="entry">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2><a href="{% url "blog:entry" entry.slug %}">{{ entry.title }}</a></h2>
+      Published {{ entry.created|naturaltime }}
+      <div class="content">
+        {{ entry.content|truncatechars_html:"300"|safe }}
+      </div>
+      <div class="read-more-wrapper">
+        <a href="{{ entry.get_absolute_url }}" class="pull-right">Read more ..</a>
+      </div>
+        </div>
+      </div>
+    </section>
+    <hr/>
+  {% empty %}
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Blog</h1>
+        <em>Nothing published, yet.</em>
+      </div>
+    </div>
+  {% endfor %}
+
+  {% if is_paginated %}
+
+    <nav aria-label="pagination" class="paginator">
+      <ul class="pager">
+        {% if page_obj.has_previous %}
+          <li class="previous"><a
+                  href="{% url "blog:entries" %}?page={{ page_obj.previous_page_number }}"><span
+                  aria-hidden="true">&larr;</span> Older</a></li>
+        {% endif %}
+        {% if page_obj.has_next %}
+          <li class="next"><a href="{% url "blog:entries" %}?page={{ page_obj.next_page_number }}">Newer
+            <span aria-hidden="true">&rarr;</span></a></li>
+        {% endif %}
+      </ul>
+    </nav>
+
+
+  {% endif %}
+
+{% endblock %}{% endraw %}

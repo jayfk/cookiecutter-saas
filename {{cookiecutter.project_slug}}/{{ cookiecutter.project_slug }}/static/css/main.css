@@ -1,0 +1,139 @@
+/* These styles are generated from project.scss. */
+
+.alert-debug {
+  color: black;
+  background-color: white;
+  border-color: #d6e9c6;
+}
+
+.alert-error {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+/* Display django-debug-toolbar.
+   See https://github.com/django-debug-toolbar/django-debug-toolbar/issues/742
+   and https://github.com/pydanny/cookiecutter-django/issues/317
+*/
+[hidden][style="display: block;"] {
+  display: block !important;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.container.content{
+  padding: 5px 0px 90px;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.entry img{
+  max-width: 100%;
+}
+
+.entry .content{
+  padding-top: 15px;
+  font-size: 20px;
+  color: #6e6e6e;
+}
+
+.entry h1 a, .entry h2 a{
+  color: inherit;
+}
+
+.read-more-wrapper{
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.paginator{
+  padding: 30px 0 0;
+}
+
+.navbar-brand img{
+  max-height: 22px;
+}
+
+body.blank{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+body.blank .container{
+  padding-top:80px;
+}
+
+body.blank h1{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.box{
+  clear: both;
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.box-title{
+    background-color: #f5f5f5;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 3px 0 0;
+    color: inherit;
+    margin-bottom: 0;
+    padding: 14px 15px 7px;
+    min-height: 48px;
+    font-size: 18px;
+}
+
+.box-content{
+  background-color: #f5f5f5;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+}
+
+.heading{
+  padding: 20px 0px;
+}

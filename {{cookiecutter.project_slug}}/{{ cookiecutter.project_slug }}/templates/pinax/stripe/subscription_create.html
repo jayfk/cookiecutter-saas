@@ -1,0 +1,32 @@
+{% raw %}{% extends "app/base.html" %}
+
+{% block title %}New Subscription{% endblock %}
+
+{% block content %}
+
+
+      <ol class="breadcrumb">
+        <li>
+          <a href="{% url "pinax_stripe_subscription_list" %}">Subscription</a>
+        </li>
+        <li class="active">
+          <strong>New</strong>
+        </li>
+      </ol>
+
+  <div class="row pricing col-4 padding-top-20">
+
+    {% with col="col-md-4" %}
+      {% for plan in plans %}
+        {% include "payments/_pricing_box.html" %}
+      {% endfor %}
+    {% endwith %}
+  </div>
+
+  <div class="row padding-top-20">
+    <div class="col-sm-12">
+      <p class="small pull-right"><em>* VAT may apply for EU customers without valid VAT ID.</em>
+      </p>
+    </div>
+  </div>
+{% endblock %}{% endraw %}

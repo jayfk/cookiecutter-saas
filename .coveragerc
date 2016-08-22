@@ -1,0 +1,2 @@
+[run]
+omit = *{{ cookiecutter.project_slug }}/**

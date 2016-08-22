@@ -1,0 +1,16 @@
+{% raw %}{% extends "app/base.html" %}
+{% endraw %}{% if cookiecutter.react == "yes" %}{% raw %}{% load render_bundle from webpack_loader %}{% endraw %}{% endif %}{% raw %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+  This is where your app kicks in.
+{% endblock %}
+
+{% endraw %}{% if cookiecutter.react == "yes" %}{% raw %}
+{% block javascript_extra %}
+  {% render_bundle 'vendor' %}
+  {% render_bundle 'main' %}
+{% endblock %}
+{% endraw %}{% endif %}{% raw %}
+{% endraw %}

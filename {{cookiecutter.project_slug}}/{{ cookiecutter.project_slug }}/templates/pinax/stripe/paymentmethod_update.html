@@ -1,0 +1,83 @@
+{% raw %}{% extends "app/base.html" %}
+
+{% block title %}Update Card{% endblock %}
+
+{% block content %}
+
+
+
+      <ol class="breadcrumb">
+        <li>
+          <a href="{% url "pinax_stripe_subscription_list" %}"> Subscription</a>
+        </li>
+        <li class="active">
+          <strong>Update Card</strong>
+        </li>
+      </ol>
+
+  <div class="row padding-top-20">
+    <div class="col-sm-12 col-md-5">
+      <div class="box">
+        <div class="box-title">
+          <h5>Update Card Expiry</h5>
+        </div>
+        <div class="box-content">
+          {% if errors %}
+            <div class="alert alert-danger">
+              {{ errors }}
+            </div>
+          {% endif %}
+          <form
+                action="{% url "pinax_stripe_payment_method_update" object.pk %}" method="post">
+            {% csrf_token %}
+            <div class="card">
+              <div class="errors"></div>
+                <div class="row">
+                  <div class="col-xs-3 col-md-3">
+                    <div class="form-group error">
+                      <label for="expMonth">MONTH</label>
+                      <input type="text" name="expMonth" class="form-control"
+                             data-stripe="exp-month" placeholder="MM" size="2" {% if form.expMonth.value %}value="{{ form.expMonth.value }}"{% endif %}>
+                      {% if form.expMonth.errors %}
+                        {% for error in form.expMonth.errors %}
+                          <strong class="error-color">{{ error|escape }}</strong>
+                        {% endfor %}
+                      {% endif %}
+                    </div>
+                  </div>
+                  <div class="col-xs-3 col-md-4">
+                    <div class="form-group">
+                      <label>YEAR</label>
+                      <input type="text" size="4" class="form-control" data-stripe="exp-year"
+                             name="expYear" placeholder="YYYY" {% if form.expYear.value %}value="{{ form.expYear.value }}"{% endif %}>
+                      {% if form.expYear.errors %}
+
+                        {% for error in form.expYear.errors %}
+                          <strong class="error-color">{{ error|escape }}</strong>
+                        {% endfor %}
+
+                      {% endif %}
+                    </div>
+                  </div>
+                  <button class="btn btn-primary pull-right margin-top-20 margin-right-30">Update</button>
+                </div>
+                {% comment %}
+                  <label for="expMonth" class="col-sm-2 control-label">Expiration</label>
+                  <div class="col-sm-1">
+                    <input type="text" size="2" class="form-control" name="expMonth"/>
+                  </div>
+                  <div class="col-sm-2">
+                    <input type="text" size="4" class="form-control" name="expYear"/>
+                  </div>
+                {% endcomment %}
+
+              </div>
+
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+{% endblock %}{% endraw %}

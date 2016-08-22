@@ -1,0 +1,36 @@
+{% raw %}{% extends "app/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+  <ol class="breadcrumb">
+    <li>
+      <a href=""> Settings</a>
+    </li>
+    <li class="active">
+      <strong>Profile</strong>
+    </li>
+  </ol>
+
+  <div class="row padding-top-20">
+    <div class="col-sm-12 col-md-5">
+      <div class="box">
+        <div class="box-title">
+          <h5>Profile</h5>
+        </div>
+        <div class="box-content">
+          <form method="post" action="{% url 'users:update' %}">
+            {% csrf_token %}
+            {% crispy form %}
+            <div class="control-group">
+              <div class="controls">
+                <button type="submit" class="btn">Update</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}{% endraw %}

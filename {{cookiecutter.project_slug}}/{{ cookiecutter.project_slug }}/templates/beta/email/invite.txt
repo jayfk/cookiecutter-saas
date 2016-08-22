@@ -1,0 +1,6 @@
+{% raw %}Great news!
+
+You have been invited to join the {{ site }} private beta.
+
+Click on this link to create your account: {{ invite_link }}
+{% endraw %}

@@ -1,0 +1,124 @@
+{% raw %}{% extends "app/base.html" %}
+
+{% block title %}Subscription{% endblock %}
+
+{% block content %}
+
+
+
+      <ol class="breadcrumb">
+        <li class="active">
+          <strong>Subscription</strong>
+        </li>
+      </ol>
+
+
+  <div class="row padding-top-20">
+     <div class="col-md-6">
+      <div class="box">
+      {% if user.plan %}
+          <div class="box-title">
+            {{ user.plan.name }}
+
+            {% if user.is_on_paid_plan %}
+              {% if user.is_subscription_cancelled %}
+                <span class="label label-danger pull-right">cancelled</span>
+              {% else %}
+                <span class="label label-success pull-right">active</span>
+              {% endif %}
+            {% elif user.is_on_trial_plan or user.is_on_free_plan %}
+                <span class="label label-success pull-right">active</span>
+            {% endif %}
+          </div>
+          <div class="box-content">
+            <p>
+              {{ user.plan_meta.description }}
+            </p>
+            <p>
+            {% for feature in user.plan_meta.features %}
+              {{ feature }}<br/>
+            {% endfor %}
+            </p>
+
+            {% if user.is_on_paid_plan %}
+                {% if user.is_subscription_cancelled %}
+                  <p><em>Ends on {{ user.subscription.current_period_end.date }}</em></p>
+                {% else %}
+                  <p><em>Next billed {{ user.plan.amount }} {{ user.plan.currency.upper }} on {{ user.subscription.current_period_end.date }}</em></p>
+                {% endif %}
+
+                {% if not user.is_subscription_cancelled %}
+                  <a class="btn btn-danger pull-right btn-sm"
+                     href="{% url "pinax_stripe_subscription_delete" user.subscription.pk %}">Cancel Subscription</a>
+                {% endif %}
+
+                <a class="btn btn-info btn-sm"
+                   href="{% url "pinax_stripe_subscription_update" user.subscription.pk %}">Change Plan</a>
+            {% else %}
+              <a class="btn btn-info btn-sm" href="{% url "pinax_stripe_subscription_create" %}">Upgrade</a>
+            {% endif %}
+            </div>
+
+      {% else %}
+         <div class="box-title">
+            No Subscription
+         </div>
+        <div class="box-content">
+             <a class="btn btn-info btn-sm" href="{% url "pinax_stripe_subscription_create" %}">Upgrade</a>
+        </div>
+      {% endif %}
+      </div>
+    </div>
+
+    {% if user.card %}
+      <div class="col-md-6">
+        <div class="box">
+          <div class="box-title">
+            Card <i class="fa fa-cc-{{ user.card.brand.lower }} text-success pull-right"></i>
+          </div>
+          <div class="box-content">
+
+
+          <h2>
+            **** **** **** {{ user.card.last4 }} <a href="{% url "pinax_stripe_payment_method_create" %}"
+             class="pull-right btn btn-info btn-sm">Change Card</a>
+          </h2>
+          <div class="row">
+            <div class="col-sm-6">
+              <small>
+                <strong>Expiry date:</strong> {{ user.card.exp_month }}/{{ user.card.exp_year }} <a
+                      href="{% url "pinax_stripe_payment_method_update" user.card.pk %}">
+                <i class="fa fa-edit"></i></a>
+              </small>
+            </div>
+            <div class="col-sm-6 text-right">
+              <small>
+                <strong>Name:</strong> {{ user.card.name }}
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    {% endif %}
+
+  </div>
+
+  {% if user.invoices %}
+  <div class="row padding-top-20">
+    <div class="col-sm-12">
+      <div class="box">
+        <div class="box-title">
+          <h5 class="panel-title">Payment History</h5>
+        </div>
+        <div class="box-content">
+
+
+      {% include "pinax/stripe/_invoice_table.html" with invoices=user.invoices %}
+          </div>
+    </div>
+    </div>
+  </div>
+  {% endif %}
+
+{% endblock %}{% endraw %}

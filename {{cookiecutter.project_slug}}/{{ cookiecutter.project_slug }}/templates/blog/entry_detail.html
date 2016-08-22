@@ -1,0 +1,19 @@
+{% raw %}{% extends "base.html" %}
+{% load humanize %}
+
+{% block title %}{{ entry.title }}{% endblock %}
+{% block robots %}index,follow{% endblock %}
+
+{% block content %}
+  <section class="entry">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>{{ entry.title }}</h1>
+        Published {{ entry.created|naturaltime }}
+        <div class="content">
+          {{ entry.content|safe }}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}{% endraw %}

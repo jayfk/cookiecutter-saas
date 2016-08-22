@@ -1,0 +1,15 @@
+{% raw %}{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block robots %}index,follow{% endblock %}
+
+{% block content %}
+      <div class="jumbotron">
+        <h1>{% endraw %}{{ cookiecutter.project_slug }}{% raw %} project :)</h1>
+        <p>This is where you tell them how wonderful your application is.</p>
+        <p>Followed by a call to action to sign up already.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="{% url "account_signup" %}" role="button">Sign Up Now</a>
+        </p>
+      </div>
+{% endblock %}{% endraw %}

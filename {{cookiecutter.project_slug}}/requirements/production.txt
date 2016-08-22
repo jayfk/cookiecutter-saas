@@ -1,0 +1,20 @@
+# Pro-tip: Try not to put anything here. Avoid dependencies in
+#	production that aren't in development.
+-r base.txt
+
+# WSGI Handler
+# ------------------------------------------------
+uwsgi
+
+# Email backends for Mailgun, Postmark, SendGrid and more
+# -------------------------------------------------------
+django-anymail==0.4.2
+
+# Raven is the Sentry client
+# --------------------------
+raven==5.23.0
+
+# New relic
+# -----------------------------------------
+newrelic
+

@@ -1,0 +1,23 @@
+{% raw %}<form action="" method="POST">
+  {% csrf_token %}
+  <script src="https://s3-eu-west-1.amazonaws.com/js.octobat.com/js/octobat-checkout-0.0.0.js"
+          class="octobat-checkout-button"
+          data-octobat-pkey="{{ OCTOBAT_PUBLIC_KEY }}"
+          data-supplier-name="{{ OCTOBAT_SUPPLIER_NAME }}"
+          data-billing-address="true"
+          data-description="{{ plan.plan.name }}"
+          data-plan="{{ plan.plan.stripe_id }}"
+          data-image="{{ OCTOBAT_IMAGE }}"
+          data-label="Subscribe"
+          data-taxes="excluded"
+          data-moss-compliance="true"
+          data-validate-tax-number="true"
+          data-detailed-panel="true"
+          data-email="{{ request.user.email }}"
+          data-coupon="true"
+          {% if request.user.first_name or request.user.last_name %}
+          data-name="{{ request.user.first_name }} {{ request.user.last_name }}"
+          {% endif %}
+  >
+  </script>
+</form>{% endraw %}

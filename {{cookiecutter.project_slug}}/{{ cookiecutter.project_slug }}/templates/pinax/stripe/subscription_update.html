@@ -1,0 +1,70 @@
+{% raw %}{% extends "app/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Change Plan{% endblock %}
+
+{% block content %}
+
+      <ol class="breadcrumb">
+        <li>
+          <a href="{% url "pinax_stripe_subscription_list" %}">Subscription</a>
+        </li>
+        <li class="active">
+          <strong>Change Plan</strong>
+        </li>
+      </ol>
+
+
+
+  {% if object %}
+    {% url "pinax_stripe_subscription_update" object.pk as post_url %}
+  {% else %}
+    {% url "pinax_stripe_subscription_create" as post_url %}
+  {% endif %}
+
+  {% if errors %}
+    <div class="alert alert-danger">
+      {{ errors }}
+    </div>
+  {% endif %}
+
+  <div class="row pricing col-4 padding-top-20">
+    {% with col="col-md-4" %}
+    {% for plan in plans %}
+      {% include "payments/_pricing_box.html" %}
+    {% endfor %}
+    {% endwith %}
+  </div>
+
+  <div class="row padding-top-20">
+      <div class="col-sm-12">
+        <p class="small pull-right"><em>* VAT may apply for EU customers without valid VAT ID.</em></p>
+      </div>
+    </div>
+
+  <div class="row padding-top-20 hidden">
+    <div class="col-sm-12">
+      <div class="panel-body">
+        <form class="form" id="stripe-form"
+              action="{{ post_url }}" method="post">
+          {% csrf_token %}
+          {{ form|crispy }}
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+
+{% block javascript_extra %}
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".change-plan").on("click", function () {
+        $("#id_plan").val($(this).data("plan"));
+        $("#stripe-form").submit();
+      });
+    });
+  </script>
+  {% include "pinax/stripe/_stripe_js.html" %}
+{% endblock %}{% endraw %}

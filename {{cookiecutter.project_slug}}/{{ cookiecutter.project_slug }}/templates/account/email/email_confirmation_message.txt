@@ -1,0 +1,7 @@
+{% raw %}{% load account %}{% user_display user as user_display %}Hi {{ user_display }}!
+
+You are receiving this message to verify your email at {{ current_site.domain }}.
+
+To confirm this is correct, go to {{ activate_url }}
+
+Thanks!{% endraw %}
