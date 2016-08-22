@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.com/jayfk/cookiecutter-saas.svg)](https://travis-ci.com/jayfk/cookiecutter-saas) [![codecov](https://codecov.io/gh/jayfk/cookiecutter-saas/branch/master/graph/badge.svg)](https://codecov.io/gh/jayfk/cookiecutter-saas)
+[![Build Status](https://travis-ci.com/jayfk/cookiecutter-saas.svg)](https://travis-ci.com/jayfk/cookiecutter-saas) [![codecov](https://codecov.io/gh/jayfk/cookiecutter-saas/branch/master/graph/badge.svg)](https://codecov.io/gh/jayfk/cookiecutter-saas)[![Documentation Status](https://readthedocs.org/projects/cookiecutter-saas/badge/?version=latest)](http://cookiecutter-saas.readthedocs.io/en/latest/?badge=latest)
+
 
 # Features
 
