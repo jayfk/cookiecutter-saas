@@ -1,0 +1,6 @@
+.travis.yml
+celerybeat-schedule.*
+.git/*
+dev.yml
+docker-compose.yml
+fabfile.py

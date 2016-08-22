@@ -1,0 +1,59 @@
+version: '2'
+
+volumes:
+  postgres_data_dev: {}
+  postgres_backup_dev: {}
+
+services:
+  postgres:
+    build: ./docker/postgres
+    volumes:
+      - postgres_data_dev:/var/lib/postgresql/data
+      - postgres_backup_dev:/backups
+    environment:
+      - POSTGRES_USER={{ cookiecutter.project_slug }}
+
+  django:
+    build:
+      context: .
+      dockerfile: ./docker/django/Dockerfile-dev
+    command: /start-dev.sh
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - POSTGRES_USER={{ cookiecutter.project_slug }}
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    links:
+      - postgres
+
+  celery:
+    build:
+      context: .
+      dockerfile: ./docker/django/Dockerfile-dev
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - .:/app
+    command: celery -A {{ cookiecutter.project_slug }}.taskapp worker -B -l INFO
+    environment:
+      - C_FORCE_ROOT=True
+      - POSTGRES_USER={{ cookiecutter.project_slug }}
+  {% if cookiecutter.react == "yes" %}
+  node:
+    build:
+      context: .
+      dockerfile: ./docker/node/Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "8080:8080"
+    command: ["npm", "run", "dev"]
+  {% endif %}
+  redis:
+    image: redis:3.0

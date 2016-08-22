@@ -1,0 +1,64 @@
+# Django
+{% if cookiecutter.django_long_term_support == "yes" %}
+django==1.8.12
+{% else %}
+django==1.10
+{% endif %}
+# Postgres
+psycopg2==2.6.2
+
+# Configuration
+django-environ==0.4.0
+
+# Forms
+django-braces==1.9.0
+django-crispy-forms==1.6.0
+
+# Models
+django-model-utils==2.5
+
+# Images
+Pillow==3.3.0
+
+# For user registration, either via email or social
+# Well-built with regular release cycles!
+django-allauth==0.25.2
+
+# Unicode slugification
+unicode-slugify==0.1.3
+django-autoslug==1.9.3
+
+# Time zones support
+pytz==2016.6.1
+
+# Redis support
+django-redis==4.4.3
+redis>=2.10.0
+
+# celery
+celery==3.1.23
+
+# asset compression
+django_compressor==2.0
+
+# stripe
+pinax-stripe
+PyJWT==1.4.1
+
+# email
+django-celery-email==1.1.5
+mailchimp==2.0.9
+
+django-loginas==0.2.2
+{% if cookiecutter.react == "yes" %}
+# Webpack to play nice with react
+django-webpack-loader==0.3.3
+
+# Django Rest Framework
+djangorestframework
+{% endif %}
+{% if cookiecutter.blog == "yes" %}
+# blog
+django-tinymce
+{% endif %}
+# Your custom requirements go here

@@ -1,0 +1,42 @@
+{% raw %}{% extends "app/base.html" %}
+
+{% block title%}Cancel Subscription{% endblock %}
+
+{% block content %}
+
+
+
+      <ol class="breadcrumb">
+
+        <li>
+          <a href="{% url "pinax_stripe_subscription_list" %}">Subscription</a>
+        </li>
+        <li class="active">
+          <strong>Cancel Subscription</strong>
+        </li>
+      </ol>
+
+  <div class="row padding-top-20">
+
+    <div class="col-sm-4">
+      <div class="box-title"><h5>Cancel Subscription</h5></div>
+      <div class="box-content">
+        {% if errors %}
+          <div class="alert alert-danger">
+            {{ errors }}
+          </div>
+          </div>
+        {% endif %}
+
+      <p>Are you sure you want to cancel your subscription?</p>
+
+      <form class="form" action="{% url "pinax_stripe_subscription_delete" object.pk %}"
+            method="post">
+        {% csrf_token %}
+        <button class="btn btn-danger btn-block margin-top-20">Yes, Cancel Subscription</button>
+      </form>
+    </div>
+
+  </div>
+
+{% endblock %}{% endraw %}

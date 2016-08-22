@@ -1,0 +1,34 @@
+{% raw %}<div class="{{ col }} col-sm-6">
+  <div class="box">
+
+    <div class="box-title text-center">
+      <h2>{{ plan.plan.name }}</h2>
+    </div>
+    <div class="box-content box-title text-center">
+      <div class="price">
+        <span class="currency">$</span>
+        <span class="amount">{{ plan.plan.amount }}{% if plan.plan.amount !=  0%}<span class="payment-asterisk">*</span>{% endif %}</span>
+        <span class="period">/ Mo</span>
+      </div>
+    </div>
+    <div class="box-content text-center">
+
+      <i class="icon-window"></i> {{ plan.meta.description }}
+
+    </div>
+    <div class="box-content text-center">
+      {% for feature in plan.meta.features %}
+        {{ feature }}</br>
+      {% endfor %}
+    </div>
+    {% if octobat_button or change_button %}
+    <div class="box-content text-center">
+      {% if octobat_button %}
+        {% include "payments/_octobat_checkout_button.html" %}
+      {% elif change_button %}
+        {% include "payments/_change_button.html" %}
+      {% endif %}
+    </div>
+    {% endif %}
+  </div><!-- /.plan -->
+</div><!-- /.col -->{% endraw %}

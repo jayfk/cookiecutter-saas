@@ -1,0 +1,27 @@
+{{ cookiecutter.domain_name }} {
+    proxy / django:5000 django-failover:5000 {
+        health_check /health_check/
+        health_check_interval 1s
+        health_check_timeout 5s
+        fail_timeout 5s
+        policy round_robin
+        proxy_header Host {host}
+        proxy_header X-Real-IP {remote}
+        proxy_header X-Forwarded-Proto {scheme}
+    }
+    log stdout
+    errors stdout
+    gzip
+}
+
+{{ cookiecutter.domain_name }}/static {
+    root /data/static
+    header / Cache-Control "max-age=2592000"
+    gzip
+}
+
+{{ cookiecutter.domain_name }}/media {
+    root /data/media
+    header / Cache-Control "max-age=2592000"
+    gzip
+}
