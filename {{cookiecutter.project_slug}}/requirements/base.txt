@@ -59,6 +59,6 @@ djangorestframework
 {% endif %}
 {% if cookiecutter.blog == "yes" %}
 # blog
-django-tinymce
+django-tinymce==2.3.0
 {% endif %}
 # Your custom requirements go here
