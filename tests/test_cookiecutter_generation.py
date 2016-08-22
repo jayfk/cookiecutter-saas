@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
-
+from __future__ import print_function
 import os
 import re
 import sh
 import time
 import shutil
+import fileinput
 
 import pytest
 from binaryornot.check import is_binary
@@ -69,7 +70,12 @@ def run_docker_dev_test(path, coverage=False):
             sh.docker_compose(
                 "--file", "{}/dev.yml".format(path), "run", "django", "coverage", "run", "manage.py", "test"
             )
+            sh.docker_compose(
+                "--file", "{}/dev.yml".format(path), "run", "django", "coverage", "xml", "-o", "coverage.xml"
+            )
             shutil.copyfile(os.path.join(str(path), ".coverage"), os.path.join(PROJECT_DIR, ".coverage"))
+            shutil.copyfile(os.path.join(str(path), "coverage.xml"),
+                            os.path.join(PROJECT_DIR, "coverage.xml"))
         else:
             sh.docker_compose(
                 "--file", "{}/dev.yml".format(path), "run", "django", "python", "manage.py", "test"
