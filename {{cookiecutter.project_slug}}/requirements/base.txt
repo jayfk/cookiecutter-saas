@@ -43,7 +43,7 @@ django_compressor==2.0
 
 # stripe
 pinax-stripe==3.2.1
-PyJWT==1.4.1
+PyJWT==1.4.2
 
 # email
 django-celery-email==1.1.5
