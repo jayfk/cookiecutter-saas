@@ -7,7 +7,7 @@
     "domain_name": "example.com",
     "timezone": "UTC",
     "django_long_term_support": ["yes", "no"],
-    "react": ["yes", "nno"],
+    "react": ["yes", "no"],
     "blog": ["yes", "no"],
     "private_beta": ["yes", "no"],
     "free_subscription_type": ["freemium", "trial", "None"]
