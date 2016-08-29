@@ -4,11 +4,10 @@ This document is still a work in progress, see [#38](https://github.com/jayfk/co
 
 ## SAAS_PLANS
 
-`SAAS_PLANS` is a 1:1 mapping to your plans on stripe.
-
-To add a new plan, log into your stripe account and create a new plan.
+The `SAAS_PLANS` settings is a 1:1 mapping to your plans on stripe. To add a new plan, log into your stripe account and create a new plan.
 
 Once created, run:
+
     docker-compose run django python manage.py sync_plans
 
 and add the plan to `SAAS_PLANS`.
@@ -29,6 +28,7 @@ If you have set `SAAS_SUBSCRIPTION_TYPE` to `trial` or `free`, you'll also need 
 (Cookiecutter does this automatically during project setup). 
 
 **freemium**:
+
 Every new user will be subscribed to the `free` plan automatically if you set `SAAS_SUBSCRIPTION_TYPE` to `freemium`.
 
 ```python
@@ -41,6 +41,7 @@ Every new user will be subscribed to the `free` plan automatically if you set `S
 ```
 
 **trial**:
+
 Every new user will be subscribed to this plan automatically if you set `SAAS_SUBSCRIPTION_TYPE` to `trial`. 
 The length of the trial is set with `SAAS_TRIAL_LENGTH` and defaults to 14 days.
 
