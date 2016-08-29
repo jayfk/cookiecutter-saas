@@ -15,6 +15,7 @@
     - Application monitoring
     - Managed newsletter sign ups
     - HTTPs out of the box (Let's encrypt)
+    - Zero downtime deployments
     
 *Unordered*
 

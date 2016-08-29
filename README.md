@@ -20,6 +20,7 @@ Cookiecutter SaaS is a highly specialised project template for SaaS websites. It
     - Application monitoring
     - Managed newsletter sign ups
     - HTTPs out of the box (Let's encrypt)
+    - Zero downtime deployments
 
 *This is only a small subset of available features. [Show all Features](https://cookiecutter-saas.readthedocs.io/en/latest/write_your_app.html)*
 
