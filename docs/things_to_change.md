@@ -18,16 +18,19 @@ Cookiecutter SaaS uses a total of three base templates. They are based on bootst
 Located at: `templates/base.html`
 
 The base template for every page outside of the application. For example the startpage, the features page, the pricing page etc.
-Todo add image here
+
+![index](images/screenshots/index.png)
 
 ### Blank Base Template
 Located at: `templates/base_blank.html`
 
 Base template for all pages with very little content and a call to action. For example, user sign ups, email verification, error pages.
-Todo add image here
+
+![sign up](images/screenshots/sign_up.png)
 
 ### App Base Template
 Located at: `templates/app/base.html`
 
 This is the base template for your app.
-Todo add image here
+
+![app dashboard react](images/screenshots/app_react_redux.png)
