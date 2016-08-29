@@ -32,6 +32,8 @@
 - Postgres
 - Caddy web server
 
+*Check out the [stack](https://cookiecutter-saas.readthedocs.io/en/latest/stack.html) section in the docs for more.*
+
 # Installation
 
 First, you need to install Cookiecutter:
