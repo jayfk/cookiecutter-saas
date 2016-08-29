@@ -5,7 +5,7 @@
 
 
 # Features
-* Note: This section is incomplete, see [#47](https://github.com/jayfk/cookiecutter-saas/issues/47)*
+*Note: This section is incomplete, see [#47](https://github.com/jayfk/cookiecutter-saas/issues/47)*
 
 - 100% test coverage
 - react & redux integration (optional)
@@ -23,7 +23,7 @@
 - emails
 
 # Stack
-* Note: This section is incomplete, see [#46](https://github.com/jayfk/cookiecutter-saas/issues/45)*
+*Note: This section is incomplete, see [#46](https://github.com/jayfk/cookiecutter-saas/issues/45)*
 
 - Django
 - Celery task queue
