@@ -1,10 +1,10 @@
 # Deploying to Production
 
+This is still a work in progress, see [#35](https://github.com/jayfk/cookiecutter-saas/issues/35)
+
 *In order to deploy Cookiecutter SaaS to production, you need to buy the [production addon](https://gumroad.com/l/CgvLn).*
 
 ## 1.) Create a Server with Docker Machine
-
-
 	
 	docker-machine create <name> --driver=digitalocean --digitalocean-access-token=<TOKEN> --digitalocean-region=fra1
 

@@ -1,5 +1,7 @@
 # Things to Change
 
+*This document is still a work in progress, see [#45](https://github.com/jayfk/cookiecutter-saas/issues/45).*
+
 ## Logo & Favicon
 The logo is at `static/images/logo.png` and the favicon at `static/images/favicon.png`. Replace them with your own.
 

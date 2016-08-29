@@ -1,5 +1,6 @@
 # Dependencies
-Todo 
+
+This is a full list of all dependencies used during development, testing and production.
 
 ## Dependencies
 

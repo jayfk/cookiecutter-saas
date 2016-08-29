@@ -1,4 +1,7 @@
 # Third Party Services
+
+This document is still a work in progress, see [#43](https://github.com/jayfk/cookiecutter-saas/issues/43).
+
 ## Stripe
 Todo
 
@@ -15,7 +18,7 @@ Used in: `development`, `production`
 	- Live Publishable Key goes into `PINAX_STRIPE_PUBLIC_KEY`
 
 ## Octobat
-Todo
+Todo, see [#43](https://github.com/jayfk/cookiecutter-saas/issues/43)
 
 Used in: `development`, `production`
 
@@ -30,7 +33,7 @@ Used in: `development`, `production`
 	- Current Live API Publishable Key goes into `OCTOBAT_PRIVATE_KEY`
 
 ## Sentry
-Todo
+Todo, see [#43](https://github.com/jayfk/cookiecutter-saas/issues/43)
 
 Used in: `production`
 
@@ -41,7 +44,7 @@ Used in: `production`
 5. Copy the `dsn` into the `.env` file at `DJANGO_SENTRY_DSN`.
 
 ## New Relic
-Todo
+Todo, see [#43](https://github.com/jayfk/cookiecutter-saas/issues/43)
 
 Used in: `production`
 
@@ -51,7 +54,7 @@ Used in: `production`
 4. Copy the license key into the `.env` file at `NEW_RELIC_LICENSE_KEY`.
 
 ## Mailgun
-Todo
+Todo, see [#43](https://github.com/jayfk/cookiecutter-saas/issues/43)
 
 Used in: `production`
 
@@ -63,7 +66,7 @@ Used in: `production`
 4. Copy the API key into the `.env` file at `DJANGO_MAILGUN_API_KEY`.
 
 ## Mailchimp
-Todo
+Todo, see [#43](https://github.com/jayfk/cookiecutter-saas/issues/43)
 
 Used in: `production`
 

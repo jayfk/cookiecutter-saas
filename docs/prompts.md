@@ -42,17 +42,17 @@ Installs the LTS release of Django, currently 1.8.
 ### React & Redux Integration 
 Prompt: **react**
 
-Installs Webpack, React, Redux, Django Rest Framework with session authentication and a react starter template. See [react & redux](#todo-link-to-react-redux) for more.
+Installs Webpack, React, Redux, Django Rest Framework with session authentication and a react starter template. See [react & redux](https://cookiecutter-saas.readthedocs.io/en/latest/react.html) for more.
 
 ### Basic Blog 
 Prompt: **blog**
 
-Adds a very simple blog app to the project. See [blog](#todo-link-to-blog) for more.
+Adds a very simple blog app to the project. See [blog](https://cookiecutter-saas.readthedocs.io/en/latest/preinstalled_apps.html#blog) for more.
 
 ### Private Beta Mode 
 Prompt: **private_beta**
 
-When enabled, user sign up is replaced by an invite system. See [private beta mode](#todo-link-to-private-beta-mode) for more.
+When enabled, user sign up is replaced by an invite system. See [private beta mode](https://cookiecutter-saas.readthedocs.io/en/latest/preinstalled_apps.html#beta) for more.
 
 ### Default Subscription Type 
 Prompt: **free_subscription_type**
