@@ -57,7 +57,6 @@ MEDIA_ROOT = str(APPS_DIR('media'))
 # ------------------------------------------------------------------------------
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
-<<<<<<< HEAD
 PINAX_STRIPE_PUBLIC_KEY = ""
 PINAX_STRIPE_SECRET_KEY = ""
 
@@ -65,15 +64,6 @@ OCTOBAT_IMAGE = "http://localhost:8000/static/images/logo_icon.png"
 
 OCTOBAT_PUBLIC_KEY = ""
 OCTOBAT_PRIVATE_KEY = ""
-=======
-PINAX_STRIPE_PUBLIC_KEY = "pk_test_q7jfeQ0vf3JdexuKiTqZmID0"
-PINAX_STRIPE_SECRET_KEY = "sk_test_gq3Z8dtIdGYjxEcIrAPzNXh8"
-
-OCTOBAT_IMAGE = "http://localhost:8000/static/images/logo_icon.png"
-
-OCTOBAT_PUBLIC_KEY = "oc_test_pkey_9t5HOJXs2ocC0p1subuQIwtt"
-OCTOBAT_PRIVATE_KEY = "oc_test_skey_aXjrKcBVUqdcsNYtH6YmWwtt"
->>>>>>> 3928c6bfe7fd05b36412501a53fc1e14383f218a
 
 ACCOUNT_DEFAULT_HTTP_PROTOCOL = "http"
 
