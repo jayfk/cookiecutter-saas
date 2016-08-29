@@ -143,7 +143,7 @@ Fire up your browser and go to [http://localhost:8000](http://localhost:8000).
 
 If you want, you can now create a super user. Open up a second terminal and run:
 
-	docker-compose -f dev.yml python manage.py createsuperuser
+	docker-compose -f dev.yml run django python manage.py createsuperuser
 
 ## What's next?
 
