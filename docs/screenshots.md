@@ -2,76 +2,76 @@
 
 ### Index 
 
-![index](docs/images/screenshots/index.png)
+![index](images/screenshots/index.png)
 
 ### Pricing
 
-![pricing](docs/images/screenshots/pricing.png)
+![pricing](images/screenshots/pricing.png)
 
 ### Request Beta Invite
 
-![beta_invite_request](docs/images/screenshots/beta_invite_request.png)
+![beta_invite_request](images/screenshots/beta_invite_request.png)
 
 ### Sign In
 
-![sign in](docs/images/screenshots/sign_in.png)
+![sign in](images/screenshots/sign_in.png)
 
 ### Sign Up
 
-![sign up](docs/images/screenshots/sign_up.png)
+![sign up](images/screenshots/sign_up.png)
 
 ### Password Reset
 
-![password reset](docs/images/screenshots/password_reset.png)
+![password reset](images/screenshots/password_reset.png)
 
 ### App Dashboard (loaded by react)
 
-![app dashboard react](docs/images/screenshots/app_react_redux.png)
+![app dashboard react](images/screenshots/app_react_redux.png)
 
 ### App Dashboard (with redux dev console)
 
-![App Dashboard (with redux dev console)](docs/images/screenshots/app_react_redux_dev_console.png)
+![App Dashboard (with redux dev console)](images/screenshots/app_react_redux_dev_console.png)
 
 ### Subscription (Free Plan)
 
-![subscription](docs/images/screenshots/subscription.png)
+![subscription](images/screenshots/subscription.png)
 
 ### Subscription (subscribed to plan)
 
-![subscription](docs/images/screenshots/subscription_subscribed.png)
+![subscription](images/screenshots/subscription_subscribed.png)
 
 ### Email Settings
 
-![email](docs/images/screenshots/email_settings.png)
+![email](images/screenshots/email_settings.png)
 
 ### Checkout
 
-![checkout](docs/images/screenshots/checkout.png)
+![checkout](images/screenshots/checkout.png)
 
 ### Change Plan
 
-![change_plan](docs/images/screenshots/change_plan.png)
+![change_plan](images/screenshots/change_plan.png)
 
 ### Cancel Subscription
 
-![cancel subscription](docs/images/screenshots/cancel_subscription.png)
+![cancel subscription](images/screenshots/cancel_subscription.png)
 
 ### Profile
 
-![profile](docs/images/screenshots/profile.png)
+![profile](images/screenshots/profile.png)
 
 ### Change Password
 
-![change password](docs/images/screenshots/change_password.png)
+![change password](images/screenshots/change_password.png)
 
 ### Email confirmation (HTML Email)
 
-![email confirmation](docs/images/screenshots/email_confirmation.png)
+![email confirmation](images/screenshots/email_confirmation.png)
 
 ### Email password reset (HTML Email)
 
-![email password reset](docs/images/screenshots/email_password_reset.png)
+![email password reset](images/screenshots/email_password_reset.png)
 
 ### Django Admin
 
-![admin](docs/images/screenshots/admin.png)
+![admin](images/screenshots/admin.png)
