@@ -7,20 +7,20 @@
 # Features
 *Note: This section is incomplete, see [#47](https://github.com/jayfk/cookiecutter-saas/issues/47)*
 
-- 100% test coverage
-- react & redux integration (optional)
-- private beta mode (optional)
-- user registration and authentication
-- subscriptions with stripe, invoicing and VAT collection with Octobat
-- error reporting with sentry
-- newsletter sign ups with mailchimp
-- application monitoring with new relic
-- zero downtime deployments
-- full docker for development and production
-- HTTPs only with let's encrypt on production
-- managed media and static files
-- scalable
-- emails
+- Docker on development and production
+- 100% project test coverage
+- subscription management out of the box with stripe
+- invoicing and VAT collection
+- React and Redux integration (optional)
+- Private beta mode
+- Free subscription support (freemium & trial)
+- On production:
+    - Error log aggregation and notification
+    - Application monitoring
+    - Managed newsletter sign ups
+    - HTTPs out of the box (Let's encrypt)
+
+*This is only a small subset of available features. [Show all Features](https://cookiecutter-saas.readthedocs.io/en/latest/write_your_app.html)*
 
 # Stack
 *Note: This section is incomplete, see [#46](https://github.com/jayfk/cookiecutter-saas/issues/45)*
