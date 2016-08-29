@@ -33,7 +33,7 @@ Cookiecutter SaaS is a highly specialised project template for SaaS websites. It
 - Postgres
 - Caddy web server
 
-*Check out the [stack](https://cookiecutter-saas.readthedocs.io/en/latest/stack.html) section in the docs for more.*
+*Want to know more? Check out the [stack](https://cookiecutter-saas.readthedocs.io/en/latest/stack.html) section in the docs.*
 
 # Installation
 
