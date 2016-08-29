@@ -145,7 +145,7 @@ If you want, you can now create a super user. Open up a second terminal and run:
 
 - [Write your app](https://cookiecutter-saas.readthedocs.io/en/latest/write_your_app.html)
 - [Things to change](https://cookiecutter-saas.readthedocs.io/en/latest/things_to_change.html)
-- [Cookiecutter SaaS preinstalled apps](https://cookiecutter-saas.readthedocs.io/en/latest/cookiecutter_aaas_preinstalled_apps.html)
+- [Cookiecutter SaaS preinstalled apps](https://cookiecutter-saas.readthedocs.io/en/latest/cookiecutter_saas_preinstalled_apps.html)
 - [Cookiecutter SaaS settings](https://cookiecutter-saas.readthedocs.io/en/latest/cookiecutter_saas_settings.html)
 - [Subscriptions](https://cookiecutter-saas.readthedocs.io/en/latest/subscriptions.html)
 - [Project code overview](https://cookiecutter-saas.readthedocs.io/en/latest/code_overview.html)
