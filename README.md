@@ -3,6 +3,7 @@
 [![codecov](https://codecov.io/gh/jayfk/cookiecutter-saas/branch/master/graph/badge.svg)](https://codecov.io/gh/jayfk/cookiecutter-saas)
 [![Documentation Status](https://readthedocs.org/projects/cookiecutter-saas/badge/?version=latest)](http://cookiecutter-saas.readthedocs.io/en/latest/?badge=latest)
 
+Cookiecutter SaaS is a highly specialised project template for SaaS websites based on Django and (optionally) React + Redux.
 
 # Features
 *Note: This section is incomplete, see [#47](https://github.com/jayfk/cookiecutter-saas/issues/47)*
