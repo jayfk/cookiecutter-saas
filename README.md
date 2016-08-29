@@ -3,7 +3,7 @@
 [![codecov](https://codecov.io/gh/jayfk/cookiecutter-saas/branch/master/graph/badge.svg)](https://codecov.io/gh/jayfk/cookiecutter-saas)
 [![Documentation Status](https://readthedocs.org/projects/cookiecutter-saas/badge/?version=latest)](http://cookiecutter-saas.readthedocs.io/en/latest/?badge=latest)
 
-Cookiecutter SaaS is a highly specialised project template for SaaS websites. It is based on Django with full (optional) React & Redux support.
+Cookiecutter SaaS is a highly specialised project template for SaaS websites. It is based on Django with full (optional) React & Redux support. [Screenshots](https://cookiecutter-saas.readthedocs.io/en/latest/subscriptions.html)
 
 # Features
 *Note: This section is incomplete, see [#47](https://github.com/jayfk/cookiecutter-saas/issues/47)*
@@ -46,7 +46,7 @@ Now run it against this repo:
 
 	cookiecutter https://github.com/jayfk/cookiecutter-saas
 	
-Cookiecutter will prompt you for some options on how the project should be generated for you. If you are doing this for the first time, check out the [prompts section](#todo-link-to-prompts) in the docs.
+Cookiecutter will prompt you for some options on how the project should be generated for you. If you are doing this for the first time, check out the [prompts section](https://cookiecutter-saas.readthedocs.io/en/latest/prompts.html) in the docs.
 
 ```
 project_name [project_name]: Demo
