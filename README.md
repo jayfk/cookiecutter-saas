@@ -146,16 +146,19 @@ If you want, you can now create a super user. Open up a second terminal and run:
 
 ## What's next?
 
-- [Write your app](https://cookiecutter-saas.readthedocs.io/en/latest/write_your_app.html)
-- [Things to change](https://cookiecutter-saas.readthedocs.io/en/latest/things_to_change.html)
-- [Cookiecutter SaaS preinstalled apps](https://cookiecutter-saas.readthedocs.io/en/latest/cookiecutter_saas_preinstalled_apps.html)
-- [Cookiecutter SaaS settings](https://cookiecutter-saas.readthedocs.io/en/latest/cookiecutter_saas_settings.html)
-- [Subscriptions](https://cookiecutter-saas.readthedocs.io/en/latest/subscriptions.html)
-- [Project code overview](https://cookiecutter-saas.readthedocs.io/en/latest/code_overview.html)
-- [Third Party Services](https://cookiecutter-saas.readthedocs.io/en/latest/third_party_services.html)
-- [React](https://cookiecutter-saas.readthedocs.io/en/latest/react.html)
-- Production
+*Note: Some parts of the documentation are still incomplete. The % next to each link indicates how far the documentation for the topic is.* 
+
+- [Write your app](https://cookiecutter-saas.readthedocs.io/en/latest/write_your_app.html) *40%*
+- [Things to change](https://cookiecutter-saas.readthedocs.io/en/latest/things_to_change.html) *50%*
+- **Project Specific**:
+    - [Preinstalled apps](https://cookiecutter-saas.readthedocs.io/en/latest/cookiecutter_saas_preinstalled_apps.html) *0%*
+    - [Settings](https://cookiecutter-saas.readthedocs.io/en/latest/cookiecutter_saas_settings.html) *0%*
+- [Subscriptions](https://cookiecutter-saas.readthedocs.io/en/latest/subscriptions.html) *0%*
+- [Project code overview](https://cookiecutter-saas.readthedocs.io/en/latest/code_overview.html) *0%*
+- [Third Party Services](https://cookiecutter-saas.readthedocs.io/en/latest/third_party_services.html) *80%*
+- [React](https://cookiecutter-saas.readthedocs.io/en/latest/react.html) *0%*
+- **Production**:
     - [Get the Production Addon](https://gumroad.com/l/CgvLn)
-    - [Deploying to production](https://cookiecutter-saas.readthedocs.io/en/latest/production.html)
-    - [Scaling](https://cookiecutter-saas.readthedocs.io/en/latest/scaling.html)
-- [Dependencies](https://cookiecutter-saas.readthedocs.io/en/latest/dependencies.html)
+    - [Deploying to production](https://cookiecutter-saas.readthedocs.io/en/latest/production.html) *20%*
+    - [Scaling](https://cookiecutter-saas.readthedocs.io/en/latest/scaling.html) *0%*
+- [Dependencies](https://cookiecutter-saas.readthedocs.io/en/latest/dependencies.html) *95%*
