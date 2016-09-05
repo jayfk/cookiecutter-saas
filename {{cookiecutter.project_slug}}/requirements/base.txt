@@ -55,7 +55,7 @@ django-loginas==0.2.2
 django-webpack-loader==0.3.3
 
 # Django Rest Framework
-djangorestframework==3.4.5
+djangorestframework==3.4.6
 {% endif %}
 {% if cookiecutter.blog == "yes" %}
 # blog
