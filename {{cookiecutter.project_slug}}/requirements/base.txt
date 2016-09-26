@@ -1,6 +1,6 @@
 # Django
 {% if cookiecutter.django_long_term_support == "yes" %}
-django==1.8.14 # pyup: >=1.8,<1.9
+django==1.8.15 # pyup: >=1.8,<1.9
 {% else %}
 django==1.10.1
 {% endif %}
