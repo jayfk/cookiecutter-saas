@@ -1,3 +1,7 @@
+### Warning
+
+This project is no longer maintained.
+
 [![Updates](https://pyup.io/repos/github/jayfk/cookiecutter-saas/shield.svg)](https://pyup.io/repos/github/jayfk/cookiecutter-saas/)
 [![Build Status](https://travis-ci.org/jayfk/cookiecutter-saas.svg?branch=master)](https://travis-ci.org/jayfk/cookiecutter-saas) 
 [![codecov](https://codecov.io/gh/jayfk/cookiecutter-saas/branch/master/graph/badge.svg)](https://codecov.io/gh/jayfk/cookiecutter-saas)
