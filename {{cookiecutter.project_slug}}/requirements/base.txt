@@ -2,7 +2,7 @@
 {% if cookiecutter.django_long_term_support == "yes" %}
 django==1.8.14 # pyup: >=1.8,<1.9
 {% else %}
-django==1.10.1
+django==1.11
 {% endif %}
 # Postgres
 psycopg2==2.6.2
