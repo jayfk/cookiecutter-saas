@@ -42,7 +42,7 @@ celery==3.1.23
 django-compressor==2.1
 
 # stripe
-pinax-stripe==3.2.1
+pinax-stripe==3.4.0
 PyJWT==1.4.2
 
 # email
