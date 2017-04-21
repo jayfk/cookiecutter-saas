@@ -8,7 +8,7 @@ uwsgi==2.0.13.1
 
 # Email backends for Mailgun, Postmark, SendGrid and more
 # -------------------------------------------------------
-django-anymail==0.4.2
+django-anymail==0.7
 
 # Raven is the Sentry client
 # --------------------------
