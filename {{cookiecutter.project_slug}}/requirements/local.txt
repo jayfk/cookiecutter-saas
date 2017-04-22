@@ -9,4 +9,4 @@ factory_boy==2.7.0
 django-debug-toolbar==1.5
 
 # improved REPL
-ipdb==0.10.1
+ipdb==0.10.3
