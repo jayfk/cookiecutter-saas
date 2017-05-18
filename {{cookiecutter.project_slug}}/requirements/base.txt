@@ -49,7 +49,7 @@ PyJWT==1.4.2
 django-celery-email==1.1.5
 mailchimp==2.0.9
 
-django-loginas==0.2.2
+django-loginas==0.3.2
 {% if cookiecutter.react == "yes" %}
 # Webpack to play nice with react
 django-webpack-loader==0.3.3
