@@ -46,7 +46,7 @@ pinax-stripe==3.2.1
 PyJWT==1.4.2
 
 # email
-django-celery-email==1.1.5
+django-celery-email==2.0.0
 mailchimp==2.0.9
 
 django-loginas==0.2.2
